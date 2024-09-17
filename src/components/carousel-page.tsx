@@ -27,9 +27,10 @@ export function CarouselPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-background flex flex-col">
+      <main className="flex-grow flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-3xl">
-        <h1 className="text-3xl font-bold text-center mb-8">Photo Carousel</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">Our Past Projects</h1>
         <div className="relative">
           <div className="overflow-hidden rounded-lg">
             <div
@@ -85,6 +86,8 @@ export function CarouselPage() {
           </Link>
         </div>
       </div>
+      </main>
+      <Footer />
     </div>
   )
 }

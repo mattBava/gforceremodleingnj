@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Footer } from './footer'
 
-
+// Gathers information that is entered into the form
 export function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,6 +25,7 @@ export function ContactPage() {
     setFormData(prevData => ({ ...prevData, [name]: value }))
   }
 
+  //send results from submitted form to api email send
   const handleSubmit = async (e) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
@@ -41,6 +42,7 @@ export function ContactPage() {
       <main className="flex-grow flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-md">
           <h1 className="text-3xl font-bold text-center mb-8">Contact Us</h1>
+          <p className='text-center text-xl pb-4'>Please fill out the form below and leave a discription of the project you want to get done and we will get back to you as soon as we can.</p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Label htmlFor="name">Name</Label>
