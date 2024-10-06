@@ -20,13 +20,13 @@ export function ContactPage() {
 
 
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target
     setFormData(prevData => ({ ...prevData, [name]: value }))
   }
 
   //send results from submitted form to api email send
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
 
