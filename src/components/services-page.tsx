@@ -14,6 +14,11 @@ const services = [
     title: "Decks",
     description: "Enhance your outdoor living space with custom decks from G-Force Remodling NJ. Our skilled team designs and builds durable, beautiful decks tailored to your style and needs, perfect for relaxing or entertaining. We focus on quality materials, craftsmanship, and a seamless build process to ensure your deck is a space you'll enjoy for years.",
     image: "/images/Deck.JPG?height=300&width=400"
+  }, 
+  {
+    title: "Floor Paneling",
+    description: "Upgrade your home’s look and feel with expertly installed floor paneling. Whether you're looking for hardwood, laminate, or vinyl, we offer a wide selection of high-quality materials to suit any style. Our professional installation ensures a seamless, long-lasting finish that enhances the beauty and value of your home",
+    image: "/images/Floor.JPEG?height=300&width=400"
   },
   {
     title: "Kitchens",
@@ -24,6 +29,11 @@ const services = [
     title: "Porticos",
     description: "Add elegance and curb appeal to your home with a custom-built portico. Our team designs beautiful, weather-resistant porticos that provide both style and protection for your entryway. With a focus on detail and quality craftsmanship, we ensure your new portico enhances the beauty and value of your home.",
     image: "/images/Portico.JPEG?height=300&width=400"
+  },
+  {
+    title: "Firepalces",
+    description: "Bring new life to your fireplace with a fireplace refinishing. Whether it's a modern update or restoring its classic charm, we revitalize your fireplace with custom materials and expert craftsmanship. From stone and brickwork to sleek new finishes, we ensure your fireplace becomes a stunning focal point in your home.",
+    image: "/images/Fireplace.jpeg?height=300&width=400"
   }
 ]
 
