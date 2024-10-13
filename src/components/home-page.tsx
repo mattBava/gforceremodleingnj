@@ -18,9 +18,9 @@ export function HomePageComponent() {
 
             />
           </div>
-          <h1 className="text-2xl font-bold text-center mb-4">Welcome to Our Website</h1>
+          <h1 className="text-2xl font-bold text-center mb-4">Get Started on your remodeling project today.</h1>
           <p className="text-center mb-8">
-            Discover amazing content and features tailored just for you.
+            Contact us for a free quote.
           </p>
           <div className="flex flex-col space-y-4">
             <Link href="/services" passHref>

@@ -11,8 +11,8 @@ export async function POST(request:any) {
     console.log(body)
     const{address, email, name, phone, projectDescription} = body
     const { data, error } = await resend.emails.send({
-      from: 'Adam <adam@gforceremodelingnj.com>',
-      to: "matthew.bava@gmail.com",
+      from: 'QuoteRequest <noreply@gforceremodelingnj.com>',
+      to: "gforceremodelingnj@gmail.com",
       subject: 'A new quote request from ' + name,
       react: EmailTemplate({ firstName: name , Address: address , Phone: phone , Email : email, Project: projectDescription}),
     });

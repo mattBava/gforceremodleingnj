@@ -7,12 +7,28 @@ import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Footer } from './footer'
 
-const images = [
+const images = [ 
+  "/images/oldDeck1.JPG",
   '/images/Deck.JPG',
+  "/images/oldDeck2.WEBP",
+  "/images/newDeck.PNG",
+  "/images/oldFire1.WEBP",
+  "/images/Fireplace.JPEG",
+  "/images/oldCloset.WEBP",
+  "/images/newCloset.jpg",
   '/images/Closet.JPEG',
+  
+  "/images/Bathroomb&a.DNG",
+  "/images/BROld.DNG",
   '/images/Bathroom.jpg',
   '/images/Portico.JPEG',
+  "/images/Oldk1.WEBP",
+  "/images/Oldk2.WEBP", 
   '/images/image 21.png',
+ 
+ 
+  
+
 ]
 
 export function CarouselPage() {
@@ -42,7 +58,7 @@ export function CarouselPage() {
                   <Image
                     src={src}
                     alt={`Carousel Image ${index + 1}`}
-                    width={600}
+                    width={400}
                     height={400}
                     className=" w-full aspect-[4/3]"
                   />
