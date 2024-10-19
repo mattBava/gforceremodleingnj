@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -17,18 +17,23 @@ export function ContactPage() {
     email: '',
     projectDescription: ''
   })
+  const [file, setFile] = useState<File | null>(null)
 
-
-
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData(prevData => ({ ...prevData, [name]: value }))
+  } 
+   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setFile(e.target.files[0])
+    }
   }
 
   //send results from submitted form to api email send
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
+    console.log('File uploaded:', file)
 
     const response = await fetch("/api/send", {
       method: "POST",
@@ -94,6 +99,17 @@ export function ContactPage() {
                 value={formData.projectDescription}
                 onChange={handleChange}
                 required
+              />
+            </div>
+            <div>
+              <Label htmlFor="photo">Upload Photo</Label>
+              <Input
+                id="photo"
+                name="photo"
+                type="file"
+                onChange={handleFileChange}
+                accept="image/*"
+                className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90"
               />
             </div>
             <Button type="submit" className="w-full">Submit</Button>

@@ -22,9 +22,8 @@ const images = [
   "/images/OldK1.WEBP",
   "/images/Oldk2.WEBP", 
   '/images/image 21.png',
- 
- 
-  
+  "/images/perg1.jpg",
+  "/images/perg2.JPG", 
 
 ]
 
