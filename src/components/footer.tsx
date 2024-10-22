@@ -13,7 +13,7 @@ export function Footer() {
         </a>
           </div>
           <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
-            <p>&copy; G-Force Remodeling Nj, LLC. All rights reserved.</p>
+            <p>&copy; G-Force Remodeling NJ, LLC. All rights reserved.</p>
           </div>
           <div className="w-full md:w-1/3 text-center md:text-right">
             <p>NJ Home Imporvement License #13VH13323100</p>
